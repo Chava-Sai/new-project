@@ -31,10 +31,13 @@ class _MainLayoutState extends State<MainLayout> {
         onTap: (index) => setState(() => _currentIndex = index),
         selectedItemColor: Colors.red,
         unselectedItemColor: Colors.grey,
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.white,
         type: BottomNavigationBarType.fixed,
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: 'movies'),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home_filled),
+            label: 'movies',
+          ),
           BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
         ],
